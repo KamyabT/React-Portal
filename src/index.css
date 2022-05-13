@@ -1,0 +1,84 @@
+
+
+body {
+  margin: 0;
+  /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif; */
+  /* -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; */
+  direction: rtl;
+  text-align: right !important;
+}
+
+
+@font-face {
+  font-family: "IRANSansWeb";
+  src: local("IRANSansWeb"),
+      url("./fonts/IRANSansWeb.ttf") format("truetype");
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+}
+
+* {
+  text-decoration: none;
+}
+
+/********************Navbar*****************/
+
+.navbarDesign {
+  background-color: #e6462d;
+}
+
+.imgDesign {
+  width: 50px;
+  height: 50px;
+
+  border-radius: 50%;
+}
+
+
+
+/********************Sidebar*****************/
+
+
+
+.sidebarDesign {
+  height: calc(100vh - 66px);
+  position: fixed;
+  background-color: #518f8b;
+}
+
+.sidebarDesign ul {
+  list-style: none;
+  text-decoration: none !important;
+  padding: 0;
+}
+
+.sidebarDesign li a{
+  text-decoration: none;
+}
+
+
+.sidebarDesign li:hover{
+  background-color: #e3e1c8;
+  border-radius: 5px;
+}
+
+.sidebarDesign li:hover a {
+  color: #472c33 !important;
+}
+
+
+
+/********************Page Header*****************/
+
+
+.pageHeaderDesign {
+  width: calc(100% - 350px);
+  right: 315px;
+  position: relative;
+  background-color: #e3e1c8;
+}
