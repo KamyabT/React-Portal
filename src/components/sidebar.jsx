@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 import { FaTachometerAlt } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { FaFileInvoiceDollar } from "react-icons/fa";
@@ -18,46 +19,74 @@ class Sidebar extends Component {
         <a href="#"></a>
         <ul>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaTachometerAlt size="18px" className="m-1" />
               Dashboard
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaUsers size="18px" className="m-1" />
               Users
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaFileInvoiceDollar size="18px" className="m-1" />
               Invoice Archive
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaFileUpload size="18px" className="m-1" />
               Upload Invoice
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaUserEdit size="18px" className="m-1" />
               Edit Users
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaSms size="18px" className="m-1" />
               SMS Dashbaord
-            </a>
+            </Link>
           </li>
           <li className="nav-link">
-            <a className="text-white d-flex align-items-center" href="#">
+            <Link
+              to="#"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
               <FaSignOutAlt size="18px" className="m-1" />
               Log out
-            </a>
+            </Link>
           </li>
         </ul>
       </div>
