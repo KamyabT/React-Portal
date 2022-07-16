@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import { FaTachometerAlt } from "react-icons/fa";
 import { FaUsers } from "react-icons/fa";
 import { FaFileInvoiceDollar } from "react-icons/fa";
@@ -20,7 +20,7 @@ class Sidebar extends Component {
         <ul>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/"
               className="text-white d-flex align-items-center"
               href="#"
             >
@@ -30,7 +30,7 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/usersList"
               className="text-white d-flex align-items-center"
               href="#"
             >
@@ -40,7 +40,7 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/invoiceArchives"
               className="text-white d-flex align-items-center"
               href="#"
             >
@@ -50,7 +50,7 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/newInvoice"
               className="text-white d-flex align-items-center"
               href="#"
             >
@@ -60,7 +60,7 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/createUser"
               className="text-white d-flex align-items-center"
               href="#"
             >
@@ -70,7 +70,7 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/Smspanel"
               className="text-white d-flex align-items-center"
               href="#"
             >
@@ -80,7 +80,7 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link">
             <Link
-              to="#"
+              to="/logOut"
               className="text-white d-flex align-items-center"
               href="#"
             >

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import Image from "../images/ProfileAvatar.png";
 import persianDate from "../../node_modules/persian-date/dist/persian-date.js";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 class Navbar extends Component {
   state = {};

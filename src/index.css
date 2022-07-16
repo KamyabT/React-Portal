@@ -26,6 +26,23 @@ code {
   text-decoration: none;
 }
 
+
+/********************Effect On All*****************/
+
+
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 /********************Navbar*****************/
 
 .navbarDesign {
@@ -81,4 +98,44 @@ code {
   right: 315px;
   position: relative;
   background-color: #e3e1c8;
+}
+
+
+
+
+
+
+/********************Page Main Content Section*****************/
+
+
+.mainContentDesign {
+  width: calc(100% - 350px);
+  right: 315px;
+  position: relative;
+  background-color: #e3e1c8;
+}
+
+
+
+
+/********************Smspanel Section*****************/
+
+textarea:focus {
+  outline: none;
+}
+
+
+
+
+/********************Create User Section*****************/
+
+
+.userInputsDesign {
+  border-radius: 1px !important;
+  /* border-color: grey !important; */
+}
+
+
+.userInputsDesign:focus {
+  outline: none;
 }
