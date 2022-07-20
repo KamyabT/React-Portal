@@ -109,6 +109,11 @@ input[type=number] {
 
 
 .mainContentDesign {
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
   width: calc(100% - 350px);
   right: 315px;
   position: relative;
@@ -138,4 +143,28 @@ textarea:focus {
 
 .userInputsDesign:focus {
   outline: none;
+}
+
+
+
+
+
+
+/********************Invoice Archives Section*****************/
+
+
+.buttonDesign {
+  border: none;
+  border-radius: 0.25rem;
+  padding: 3px 15px;
+}
+
+
+.formButtonDesign input {
+  border: 1px solid;
+}
+
+.formButtonDesign select {
+  border: 1px solid;
+  padding: 1.5px;
 }

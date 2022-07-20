@@ -62,10 +62,10 @@ class Sidebar extends Component {
             <Link
               to="/createUser"
               className="text-white d-flex align-items-center"
-              href="#"
+              href="/createUser"
             >
               <FaUserEdit size="18px" className="m-1" />
-              Edit Users
+              Create Users
             </Link>
           </li>
           <li className="nav-link">

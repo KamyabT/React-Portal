@@ -5,26 +5,38 @@ import Navbar from './components/navbar';
 import Sidebar from './components/sidebar';
 import PageHeader from './components/pageHeader';
 import MainContent from './components/mainContent';
-import SmsPanel from './components/Smspanel';
 import CreateUser from './components/createUser';
 import Home from './components/home';
 import './App.css';
-import Smspanel from './components/Smspanel';
+import Smspanel from './components/smspanel';
+import InvoiceArchive from './components/invoiceArchive';
+import UsersList from './components/usersList';
+import NewInvoice from './components/newInvoice';
 
 function App() {
   return (
     <div>
       <Router>
+        <Switch>
+          <Route exact path='/' component={Home} />
+          <Route exact path='/Smspanel' component={Smspanel} />
+          <Route exact path='/invoiceArchives' component={InvoiceArchive} />
+          <Route exact path='/usersList' component={UsersList} />
+          <Route exact path='/newInvoice' component={NewInvoice} />
+          <Route exact path='/createUser' component={CreateUser} />
+
+        </Switch>
+        {/* <Route path='/aa' component={Home} /> */}
         {/* <Switch>
           <Route exact path="/Smspanel">
             <Smspanel />
           </Route>
         </Switch> */}
-        <Switch>
+        {/* <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-        </Switch>
+        </Switch> */}
         {/* <Switch>
           <Route exact path="/Smspanel">
             <Smspanel/>

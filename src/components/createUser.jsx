@@ -1,13 +1,21 @@
 import React, { Component } from "react";
+import Navbar from "./navbar";
+import PageHeader from "./pageHeader";
+import Sidebar from "./sidebar";
 
 class CreateUser extends Component {
   state = {};
   render() {
     return (
-      <section
-        className="d-flex align-items-center mt-3 p-4 rounded mainContentDesign"
-        style={{ height: "280px" }}
-      ></section>
+      <>
+        <Navbar />
+        <Sidebar />
+        <PageHeader />
+        <section
+          className="d-flex align-items-center mt-3 p-4 rounded mainContentDesign"
+          style={{ height: "280px" }}
+        ></section>
+      </>
     );
   }
 }
