@@ -3,7 +3,6 @@ import Navbar from "./navbar";
 import PageHeader from "./pageHeader";
 import Sidebar from "./sidebar";
 
-
 class UsersList extends Component {
   state = {};
   render() {
@@ -11,7 +10,7 @@ class UsersList extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader />
+        <PageHeader value={"Users List"} />
       </>
     );
   }

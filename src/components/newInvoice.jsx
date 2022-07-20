@@ -10,7 +10,7 @@ class NewInvoice extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader />
+        <PageHeader value={"New Invoice"} />
         <h2>neweeeeeeeeeeeeeeeeeeeeeeeeee</h2>
       </>
     );

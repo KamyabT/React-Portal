@@ -10,7 +10,7 @@ class Home extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader />
+        <PageHeader value={"Dashboard"} />
       </>
     );
   }

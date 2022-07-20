@@ -4,18 +4,25 @@ import Sidebar from "./sidebar";
 import PageHeader from "./pageHeader";
 
 class InvoiceArchive extends Component {
-  state = {};
+  state = {
+    num: 10,
+  };
   render() {
     return (
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader />
+        <PageHeader value={"Inovice Archive"}/>
         <section className="mainContentDesign justify-content-center">
           <form className="d-flex align-items-center formButtonDesign">
             <div className="form-group ms-1">
               <label for="">Year :</label>
-              <select className="rounded me-2" id="" name="" form="">
+              <select
+                className="rounded me-2 InputsDesign"
+                id=""
+                name=""
+                form=""
+              >
                 <option>2022</option>
                 <option>2021</option>
                 <option>2020</option>
@@ -27,7 +34,12 @@ class InvoiceArchive extends Component {
             </div>
             <div className="form-group mx-1">
               <label for="">From Month :</label>
-              <select className="rounded me-2" id="" name="" form="">
+              <select
+                className="rounded me-2 InputsDesign"
+                id=""
+                name=""
+                form=""
+              >
                 <option>January</option>
                 <option>February</option>
                 <option>March</option>
@@ -44,7 +56,12 @@ class InvoiceArchive extends Component {
             </div>
             <div className="form-group mx-1">
               <label for="">To Month :</label>
-              <select className="rounded me-2" id="" name="" form="">
+              <select
+                className="rounded me-2 InputsDesign"
+                id=""
+                name=""
+                form=""
+              >
                 <option>January</option>
                 <option>February</option>
                 <option>March</option>

@@ -12,7 +12,7 @@ class Smspanel extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader />
+        <PageHeader value={"SMS Dashboard"} />
         <section className="mainContentDesign">
           <form className="">
             <p className="iranSansFont">
