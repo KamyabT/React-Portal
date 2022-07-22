@@ -121,6 +121,19 @@ input[type=number] {
 }
 
 
+.halfMainContentDesign {
+  display: flex;
+  align-items: center;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+  padding: 1.5rem;
+  width: calc((100% - 360px)/2);
+  right: 315px;
+  margin-left: 10px;
+  position: relative;
+  background-color: #e3e1c8;
+}
+
 
 
 /********************Smspanel Section*****************/

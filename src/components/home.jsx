@@ -11,6 +11,10 @@ class Home extends Component {
         <Navbar />
         <Sidebar />
         <PageHeader value={"Dashboard"} />
+        <section className="d-flex">
+          <div className="halfMainContentDesign"></div>
+          <div className="halfMainContentDesign"></div>
+        </section>
       </>
     );
   }

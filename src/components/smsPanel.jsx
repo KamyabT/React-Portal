@@ -36,6 +36,7 @@ class Smspanel extends Component {
           </form>
         </section>
 
+
         {/* <form action="#" className="d-flex flex-column">
             <p className="iranSansFont">
               توجه! پیامک شما به صورت پیش فرض به همه کاربران موجود در پرتال
