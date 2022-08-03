@@ -30,16 +30,6 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link iranSansFont">
             <Link
-              to="/usersList"
-              className="text-white d-flex align-items-center"
-              href="#"
-            >
-              <FaUsers size="18px" className="ms-2" />
-              کاربران
-            </Link>
-          </li>
-          <li className="nav-link iranSansFont">
-            <Link
               to="/invoiceArchives"
               className="text-white d-flex align-items-center"
               href="#"
@@ -60,22 +50,32 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link iranSansFont">
             <Link
-              to="/createUser"
-              className="text-white d-flex align-items-center"
-              href="/createUser"
-            >
-              <FaUserEdit size="18px" className="ms-2" />
-              ایجاد کاربر جدید
-            </Link>
-          </li>
-          <li className="nav-link iranSansFont">
-            <Link
               to="/Smspanel"
               className="text-white d-flex align-items-center"
               href="#"
             >
               <FaSms size="18px" className="ms-2" />
               پنل پیامکی
+            </Link>
+          </li>
+          <li className="nav-link iranSansFont">
+            <Link
+              to="/usersList"
+              className="text-white d-flex align-items-center"
+              href="#"
+            >
+              <FaUsers size="18px" className="ms-2" />
+              کاربران
+            </Link>
+          </li>
+          <li className="nav-link iranSansFont">
+            <Link
+              to="/newUser"
+              className="text-white d-flex align-items-center"
+              href="/createUser"
+            >
+              <FaUserEdit size="18px" className="ms-2" />
+              ایجاد کاربر جدید
             </Link>
           </li>
           <li className="nav-link iranSansFont">

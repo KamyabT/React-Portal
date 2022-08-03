@@ -12,72 +12,74 @@ class InvoiceArchive extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"Inovice Archive"}/>
+        <PageHeader value={"آرشیو فیش حقوقی"} />
         <section className="mainContentDesign justify-content-center">
           <form className="d-flex align-items-center formButtonDesign">
             <div className="form-group ms-1">
-              <label for="">Year :</label>
+              <label for="">سال :</label>
               <select
-                className="rounded me-2 InputsDesign"
+                className="rounded me-2 InputsDesign iranSansFont"
                 id=""
                 name=""
                 form=""
               >
-                <option>2022</option>
-                <option>2021</option>
-                <option>2020</option>
-                <option>219</option>
-                <option>2018</option>
-                <option>2017</option>
-                <option>July</option>
+                <option>1401</option>
+                <option>1400</option>
+                <option>1399</option>
+                <option>1398</option>
+                <option>1397</option>
+                <option>1396</option>
               </select>
             </div>
             <div className="form-group mx-1">
-              <label for="">From Month :</label>
+              <label for="">از ماه :</label>
               <select
-                className="rounded me-2 InputsDesign"
+                className="rounded me-2 InputsDesign iranSansFont"
                 id=""
                 name=""
                 form=""
               >
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>Octobor</option>
-                <option>Novomber</option>
-                <option>December</option>
+                <option>فروردین</option>
+                <option>اردیبهشت</option>
+                <option>خرداد</option>
+                <option>تیر</option>
+                <option>مرداد</option>
+                <option>شهریور</option>
+                <option>مهر</option>
+                <option>آبان</option>
+                <option>آذر</option>
+                <option>دی</option>
+                <option>بهمن</option>
+                <option>اسفند</option>
               </select>
             </div>
             <div className="form-group mx-1">
-              <label for="">To Month :</label>
+              <label for="">تا ماه :</label>
               <select
-                className="rounded me-2 InputsDesign"
+                className="rounded me-2 InputsDesign iranSansFont"
                 id=""
                 name=""
                 form=""
               >
-                <option>January</option>
-                <option>February</option>
-                <option>March</option>
-                <option>April</option>
-                <option>May</option>
-                <option>June</option>
-                <option>July</option>
-                <option>August</option>
-                <option>September</option>
-                <option>Octobor</option>
-                <option>Novomber</option>
-                <option>December</option>
+                <option>فروردین</option>
+                <option>اردیبهشت</option>
+                <option>خرداد</option>
+                <option>تیر</option>
+                <option>مرداد</option>
+                <option>شهریور</option>
+                <option>مهر</option>
+                <option>آبان</option>
+                <option>آذر</option>
+                <option>دی</option>
+                <option>بهمن</option>
+                <option>اسفند</option>
               </select>
             </div>
-            <button type="submit" className="buttonDesign btn-success">
-              Get Data
+            <button
+              type="submit"
+              className="buttonDesign btn-success iranSansFont"
+            >
+              دریافت اطلاعات
             </button>
           </form>
         </section>
