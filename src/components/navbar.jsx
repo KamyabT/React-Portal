@@ -15,7 +15,7 @@ class Navbar extends Component {
         <div className="container-fluid d-flex justify-content-between align-items-center">
           <div>
             <a href="" className="navbar-brand text-white iranSansFont">
-              Company Portal
+              پرتال شرکت
             </a>
           </div>
           <div className="d-flex justify-content-between align-items-center">

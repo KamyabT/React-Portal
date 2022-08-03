@@ -26,43 +26,6 @@ function App() {
           <Route exact path='/createUser' component={CreateUser} />
 
         </Switch>
-        {/* <Route path='/aa' component={Home} /> */}
-        {/* <Switch>
-          <Route exact path="/Smspanel">
-            <Smspanel />
-          </Route>
-        </Switch> */}
-        {/* <Switch>
-          <Route exact path="/">
-            <Home />
-          </Route>
-        </Switch> */}
-        {/* <Switch>
-          <Route exact path="/Smspanel">
-            <Smspanel/>
-          </Route>
-        </Switch> */}
-        {/*<Switch>
-          <Route exact path="/usersList">
-            <Userslist />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route exact path="/invoiceArchives">
-            <Invoicearchives />
-          </Route>
-        </Switch>
-        <Switch>
-          <Route exact path="/newInvoice">
-            <Uploadinvoice />
-          </Route>
-        </Switch>
-        <Switch>
-        <Route exact path="/createUser">
-          <Newuser />
-        </Route>
-  </Switch> */}
-
 
       </Router>
 
@@ -76,12 +39,3 @@ function App() {
 }
 
 export default App;
-
-
-
-
-{/* <div className='content'>
-<Route path='/smsdashboard' Component={SmsPanel} />
-<Route path='/createuser' Component={CreateUser} />
-<Route path='/' Component={Sidebar} />
-</div> */}

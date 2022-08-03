@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 import PageHeader from "./pageHeader";
-import UploadForm from "./uploadInvoiceForm";
+import UploadForm from "./uploadInvoice";
 import MainContent from "./mainContent";
 
 class NewInvoice extends Component {
@@ -16,7 +16,6 @@ class NewInvoice extends Component {
         <MainContent>
           <UploadForm />
         </MainContent>
-        <h2>neweeeeeeeeeeeeeeeeeeeeeeeeee</h2>
       </>
     );
   }

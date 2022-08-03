@@ -6,7 +6,7 @@ class PageHeader extends Component {
     return (
       <section className="d-flex align-items-center mt-3 p-4 rounded pageHeaderDesign">
         <div>
-          <h3>{this.props.value}</h3>
+          <h3 className="iranSansFont m-0">{this.props.value}</h3>
         </div>
       </section>
     );

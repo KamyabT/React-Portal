@@ -7,8 +7,9 @@ class MainContent extends Component {
     return (
       <section
         className="d-flex align-items-center mt-3 p-4 rounded mainContentDesign"
-        style={{ height: "280px" }}
-      ></section>
+      >
+        {this.props.children}
+      </section>
     );
   }
 }

@@ -18,74 +18,74 @@ class Sidebar extends Component {
       >
         <a href="#"></a>
         <ul>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/"
               className="text-white d-flex align-items-center"
               href="#"
             >
-              <FaTachometerAlt size="18px" className="m-1" />
-              Dashboard
+              <FaTachometerAlt size="18px" className="ms-2" />
+              داشبورد
             </Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/usersList"
               className="text-white d-flex align-items-center"
               href="#"
             >
-              <FaUsers size="18px" className="m-1" />
-              Users
+              <FaUsers size="18px" className="ms-2" />
+              کاربران
             </Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/invoiceArchives"
               className="text-white d-flex align-items-center"
               href="#"
             >
-              <FaFileInvoiceDollar size="18px" className="m-1" />
-              Invoice Archive
+              <FaFileInvoiceDollar size="18px" className="ms-2" />
+              آرشیو فیش حقوقی
             </Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/newInvoice"
               className="text-white d-flex align-items-center"
               href="#"
             >
-              <FaFileUpload size="18px" className="m-1" />
-              Upload Invoice
+              <FaFileUpload size="18px" className="ms-2" />
+              بارگذاری فیش حقوقی
             </Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/createUser"
               className="text-white d-flex align-items-center"
               href="/createUser"
             >
-              <FaUserEdit size="18px" className="m-1" />
-              Create Users
+              <FaUserEdit size="18px" className="ms-2" />
+              ایجاد کاربر جدید
             </Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/Smspanel"
               className="text-white d-flex align-items-center"
               href="#"
             >
-              <FaSms size="18px" className="m-1" />
-              SMS Dashbaord
+              <FaSms size="18px" className="ms-2" />
+              پنل پیامکی
             </Link>
           </li>
-          <li className="nav-link">
+          <li className="nav-link iranSansFont">
             <Link
               to="/logOut"
               className="text-white d-flex align-items-center"
               href="#"
             >
-              <FaSignOutAlt size="18px" className="m-1" />
-              Log out
+              <FaSignOutAlt size="18px" className="ms-2" />
+              خروج
             </Link>
           </li>
         </ul>

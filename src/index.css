@@ -181,3 +181,21 @@ textarea:focus {
   border: 1px solid;
   padding: 2.5px;
 }
+
+
+/******************** Upload Archives *****************/
+
+.uploadInputDesign input {
+  border: 1px solid;
+}
+
+
+
+
+/******************** User Record *****************/
+
+
+
+.usersListDesign input[type=checkbox]{
+  padding: 10px 20px;
+}
