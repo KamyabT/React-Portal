@@ -70,9 +70,9 @@ class Sidebar extends Component {
           </li>
           <li className="nav-link iranSansFont">
             <Link
-              to="/newUser"
+              to="/createUser"
               className="text-white d-flex align-items-center"
-              href="/createUser"
+              href="/#"
             >
               <FaUserEdit size="18px" className="ms-2" />
               ایجاد کاربر جدید
