@@ -14,7 +14,7 @@ class UsersList extends Component {
         id: 1,
         name: "mamad1",
         personel: 800005,
-        userstatus: "act",
+        userstatus: false,
         NID: 30964155,
         phone: 9123456789,
         send: false,
@@ -26,7 +26,7 @@ class UsersList extends Component {
         id: 2,
         name: "mamad2",
         personel: 800006,
-        userstatus: "act",
+        userstatus: true,
         NID: 30545155,
         phone: 9124556789,
         send: true,
@@ -38,7 +38,7 @@ class UsersList extends Component {
         id: 3,
         name: "mamad2",
         personel: 800006,
-        userstatus: "act",
+        userstatus: false,
         NID: 30545155,
         phone: 9124556789,
         send: true,
@@ -48,6 +48,11 @@ class UsersList extends Component {
       },
     ],
   };
+
+  userCounter() {
+    return this.state.userslists.length;
+  }
+
   render() {
     return (
       <>
@@ -55,6 +60,17 @@ class UsersList extends Component {
         <Sidebar />
         <PageHeader value={"لیست کاربران"} />
         <MainContent>
+          <div className="d-flex align-items-baseline mb-3">
+            <form className="d-flex align-items-center">
+              <label className="iranSansFont ms-2">
+                جستجو در لیست کاربران:{""}
+              </label>
+              <input type={"text"} className="iranSansFont"></input>
+            </form>
+            <p className="iranSansFont me-5">
+              تعداد کاربران سیستم: {this.userCounter()}
+            </p>
+          </div>
           <table className="table table-striped iranSansFont">
             <thead>
               <tr>

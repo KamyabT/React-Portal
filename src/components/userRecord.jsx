@@ -5,13 +5,23 @@ import { FaFileInvoiceDollar } from "react-icons/fa";
 
 class UserRecord extends Component {
   state = {};
+
+
+
+  getUserStatus() {
+    if (this.props.userStatus === true) return "فعال";
+    return "غیرفعال";
+  }
+
+
+
   render() {
     return (
       <tr>
         <td className="text-center">{this.props.id}</td>
         <td className="text-center">{this.props.personelid}</td>
         <td className="text-center">{this.props.fuName}</td>
-        <td className="text-center">{this.props.userStatus}</td>
+        <td className="text-center">{this.getUserStatus()}</td>
         <td className="text-center">{this.props.nationalID}</td>
         <td className="text-center">{this.props.phone}</td>
         <td className="text-center">

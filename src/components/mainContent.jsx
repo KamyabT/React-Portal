@@ -5,9 +5,7 @@ class MainContent extends Component {
   state = {};
   render() {
     return (
-      <section
-        className="d-flex align-items-center mt-3 p-4 rounded mainContentDesign"
-      >
+      <section className="d-flex flex-column align-items-center mt-3 p-4 rounded mainContentDesign">
         {this.props.children}
       </section>
     );

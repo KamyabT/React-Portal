@@ -8,45 +8,62 @@ class NewUserForm extends Component {
         <div>
           <form>
             <div className={this.props.design}>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"text"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">نام خانوادگی: </label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"text"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">کد ملی: </label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"number"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">شماره پرسنلی: </label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"number"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
-                <label className="iranSansFont">نقش کاربری: </label>
-                <input type={"email"} className="iranSansFont"></input>
+              <div className="form-group d-flex align-items-center ms-2">
+                <label className="iranSansFont" for="">
+                  نقش کاربری:{" "}
+                </label>
+                <select
+                  className="rounded me-2 InputsDesign iranSansFont"
+                  id=""
+                  name=""
+                  form=""
+                >
+                  <option>مدیر کل</option>
+                  <option>مدیر کاربران</option>
+                  <option>مسئول فیش حقوقی</option>
+                  <option>مسئول پنل پیامکی</option>
+                  <option>کارمند</option>
+                </select>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">شماره تماس: </label>
                 <input type={"email"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">رمز عبور</label>
                 <input type={"email"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label className="iranSansFont">وضعیت</label>
                 <input type={"email"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group d-flex align-items-center">
                 <label className="iranSansFont">ارسال پیامک فیش حقوقی: </label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"checkbox"} className="iranSansFont"></input>
               </div>
-              <div className="form-group">
+              <div className="form-group ms-2">
                 <label></label>
-                <input type={"submit"} className="btn-outline-success"></input>
+                <input
+                  type={"submit"}
+                  value={"ثبت کاربر"}
+                  className="btn-outline-success iranSansFont"
+                ></input>
               </div>
             </div>
           </form>
