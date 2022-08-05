@@ -10,26 +10,26 @@ class NewUserForm extends Component {
             <div className={this.props.design}>
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
-                <input type={"text"} className="iranSansFont"></input>
+                <input type={"text"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام خانوادگی: </label>
-                <input type={"text"} className="iranSansFont"></input>
+                <input type={"text"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">کد ملی: </label>
-                <input type={"number"} className="iranSansFont"></input>
+                <input type={"number"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره پرسنلی: </label>
-                <input type={"number"} className="iranSansFont"></input>
+                <input type={"number"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group d-flex align-items-center ms-2">
                 <label className="iranSansFont" for="">
                   نقش کاربری:{" "}
                 </label>
                 <select
-                  className="rounded me-2 InputsDesign iranSansFont"
+                  className="rounded me-2 InputsDesign iranSansFont p-1"
                   id=""
                   name=""
                   form=""
@@ -43,26 +43,31 @@ class NewUserForm extends Component {
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره تماس: </label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"email"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">رمز عبور</label>
-                <input type={"email"} className="iranSansFont"></input>
+                <input type={"password"} className="iranSansFont p-1"></input>
               </div>
-              <div className="form-group ms-2">
-                <label className="iranSansFont">وضعیت</label>
-                <input type={"email"} className="iranSansFont"></input>
+              <div className="d-flex align-items-center form-group form-check form-switch ms-4">
+                <label className="iranSansFont">وضعیت: </label>
+                <input
+                  className="form-check-input p-1"
+                  type={"checkbox"}
+                  role="switch"
+                  id="flexSwitchCheckDefault"
+                ></input>
               </div>
-              <div className="form-group d-flex align-items-center">
+              <div className="form-group d-flex align-items-center ms-4">
                 <label className="iranSansFont">ارسال پیامک فیش حقوقی: </label>
-                <input type={"checkbox"} className="iranSansFont"></input>
+                <input type={"checkbox"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group ms-2">
                 <label></label>
                 <input
                   type={"submit"}
                   value={"ثبت کاربر"}
-                  className="btn-outline-success iranSansFont"
+                  className="btn-outline-success iranSansFont p-1 px-4"
                 ></input>
               </div>
             </div>

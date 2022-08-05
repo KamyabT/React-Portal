@@ -4,6 +4,7 @@ import Sidebar from "./sidebar";
 import PageHeader from "./pageHeader";
 import UploadForm from "./uploadInvoice";
 import MainContent from "./mainContent";
+import InvoicesList from "./invoicesList";
 
 class NewInvoice extends Component {
   state = {};
@@ -12,9 +13,12 @@ class NewInvoice extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"New Invoice"} />
+        <PageHeader value={"بارگذاری فیش حقوقی"} />
         <MainContent>
           <UploadForm />
+        </MainContent>
+        <MainContent>
+          <InvoicesList />
         </MainContent>
       </>
     );

@@ -68,7 +68,8 @@ class UsersList extends Component {
               <input type={"text"} className="iranSansFont"></input>
             </form>
             <p className="iranSansFont me-5">
-              تعداد کاربران سیستم: {this.userCounter()}
+              تعداد کاربران سیستم:{" "}
+              <span className="">{this.userCounter()}</span>
             </p>
           </div>
           <table className="table table-striped iranSansFont">

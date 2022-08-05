@@ -4,7 +4,7 @@ class InvoiceForm extends Component {
   state = {};
   render() {
     return (
-      <form className="d-flex align-items-center">
+      <form className="d-flex flex-wrap align-items-center iranSansFont">
         <div className="d-flex">
           <div>
             <label className="ms-1 iranSansFont" for="">
@@ -40,25 +40,21 @@ class InvoiceForm extends Component {
           </div>
         </div>
         <div>
-          <label className="ms-1 me-3 iranSansFont" for="">
+          <label className="ms-1 me-3 iranSansFont " for="">
             فایل (فایل را با فرمت zip فشرده کنید) :
           </label>
-          <input type={"file"} className="rounded"></input>
+          <input type={"file"} className="rounded chooseFileDesign"></input>
         </div>
-        <div>
-          <label
-            className="d-flex align-items-center me-3 ms-3 iranSansFont"
-            for=""
-          >
+        <div className="d-flex align-items-center">
+          <label className="align-items-center me-3 ms-3 iranSansFont" for="">
             ارسال پیامک به کاربران :
           </label>
-          <input
-            className="d-flex align-items-center"
-            type={"checkbox"}
-          ></input>
+          <input className="align-items-center" type={"checkbox"}></input>
         </div>
-        <div>
-          <button className="buttonDesign btn-success me-3">Submit</button>
+        <div className="d-flex align-items-center">
+          <button className="buttonDesign btn-success me-5">
+            بارگذاری فیش حقوقی
+          </button>
           {this.props.children}
         </div>
       </form>

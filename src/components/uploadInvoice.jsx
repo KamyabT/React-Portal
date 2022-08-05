@@ -6,8 +6,8 @@ class UploadForm extends Component {
 
   render() {
     return (
-      <div>
-        <p>
+      <div className="">
+        <p className="iranSansFont">
           برای بارگذاری فیش حقوقی، ابتدا فایل فیش حقوقی را از قسمت انتخاب فایل ،
           انتخاب کنید سپس پس از مشخص کردن ماه و سال، دکمه بارگذاری را کلیک کنید
         </p>
