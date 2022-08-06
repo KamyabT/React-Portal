@@ -18,6 +18,12 @@ body {
       url("./fonts/IRANSansWeb.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: "IRANSansX-Bold";
+  src: local("IRANSansX-Bold"),
+      url("./fonts/IRANSansX-Bold.ttf") format("truetype");
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
 }
@@ -127,7 +133,6 @@ input {
 
 .mainContentDesign {
   display: flex;
-  align-items: center;
   border-radius: 0.25rem;
   margin-top: 1rem;
   padding: 1.5rem;
@@ -140,7 +145,7 @@ input {
 
 .halfMainContentDesign {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
   border-radius: 0.25rem;
   margin-top: 1rem;
   padding: 1.5rem;

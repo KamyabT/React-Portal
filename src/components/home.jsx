@@ -15,11 +15,35 @@ class Home extends Component {
         <Sidebar />
         <PageHeader value={"داشبورد"} />
         <section className="d-flex">
-          <div className="halfMainContentDesign">
-            <InvoiceForm />
+          <div className="halfMainContentDesign d-flex flex-column">
+            <p className="iranSansFont IRANSansBold">وضعیت فیش های حقوقی</p>
+            <div className="d-flex justify-content-between">
+              <div className="iranSansFont">آخرین فیش حقوقی آپلود شده: </div>
+              <div className="iranSansFont">تیر ماه 1401</div>
+            </div>
+            <div className="d-flex justify-content-between mt-4">
+              <div>
+                <button>upload new invoice</button>
+              </div>
+              <div>
+                <button>invoice archives</button>
+              </div>
+            </div>
           </div>
-          <div className="halfMainContentDesign">
-            <SmsPanelForm />
+          <div className="halfMainContentDesign d-flex flex-column">
+            <p className="iranSansFont IRANSansBold">users status</p>
+            <div className="d-flex justify-content-between">
+              <div className="iranSansFont">users count</div>
+              <div className="iranSansFont">330</div>
+            </div>
+            <div className="d-flex justify-content-between mt-4">
+              <div>
+                <button>upload new invoice</button>
+              </div>
+              <div>
+                <button>invoice archives</button>
+              </div>
+            </div>
           </div>
         </section>
       </>
