@@ -5,8 +5,8 @@ import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 import "./fonts/IRANSansWeb.ttf";
-import "./fonts/IRANSansX-Bold.ttf";
 import "bootstrap/dist/css/bootstrap.css";
+import "./fonts/IRANSansWeb_Bold.ttf"
 import {createRoot} from 'react-dom/client';
 
 const rootElement = document.getElementById('root');

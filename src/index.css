@@ -19,10 +19,11 @@ body {
 }
 
 @font-face {
-  font-family: "IRANSansX-Bold";
-  src: local("IRANSansX-Bold"),
-      url("./fonts/IRANSansX-Bold.ttf") format("truetype");
+  font-family: "IRANSansWebBold";
+  src: local("IRANSansWebBold"),
+      url("./fonts/IRANSansWeb_Bold.ttf") format("truetype");
 }
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

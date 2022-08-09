@@ -5,6 +5,7 @@ import Sidebar from "./sidebar";
 import UploadForm from "./uploadInvoice";
 import SmsPanelForm from "./smsPanelForm";
 import InvoiceForm from "./invoiceForm";
+import { Link } from "react-router-dom";
 
 class Home extends Component {
   state = {};
@@ -16,32 +17,51 @@ class Home extends Component {
         <PageHeader value={"داشبورد"} />
         <section className="d-flex">
           <div className="halfMainContentDesign d-flex flex-column">
-            <p className="iranSansFont IRANSansBold">وضعیت فیش های حقوقی</p>
+            <p className="iranSansBoldFont mb-0">وضعیت فیش های حقوقی</p>
+            <hr />
             <div className="d-flex justify-content-between">
               <div className="iranSansFont">آخرین فیش حقوقی آپلود شده: </div>
               <div className="iranSansFont">تیر ماه 1401</div>
             </div>
             <div className="d-flex justify-content-between mt-4">
               <div>
-                <button>upload new invoice</button>
+                <button className="btn btn-success iranSansFont">
+                  آرشیو فیش حقوقی
+                </button>
               </div>
               <div>
-                <button>invoice archives</button>
+                <button className="btn btn-success iranSansFont">
+                  بارگذاری فیش حقوقی جدید
+                </button>
               </div>
             </div>
           </div>
+
           <div className="halfMainContentDesign d-flex flex-column">
-            <p className="iranSansFont IRANSansBold">users status</p>
+            <p className="iranSansBoldFont mb-0">وضعیت کاربران: </p>
+            <hr />
             <div className="d-flex justify-content-between">
-              <div className="iranSansFont">users count</div>
-              <div className="iranSansFont">330</div>
+              <div className="iranSansFont d-flex">
+                <span>تعداد کاربران ثبت شده: </span>
+                <span className="me-4">431 نفر</span>
+              </div>
+              <div className="iranSansFont d-flex justify-content-between">
+                <span>تعداد کاربران فعال: </span>
+                <span className="me-4">430 نفر</span>
+              </div>
             </div>
             <div className="d-flex justify-content-between mt-4">
               <div>
-                <button>upload new invoice</button>
+                <Link to="/usersList">
+                  <button className="btn btn-success iranSansFont">
+                    لیست کاربران
+                  </button>
+                </Link>
               </div>
               <div>
-                <button>invoice archives</button>
+                <button className="btn btn-success iranSansFont">
+                  افزودن کاربر جدید
+                </button>
               </div>
             </div>
           </div>
