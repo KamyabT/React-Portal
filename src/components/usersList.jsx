@@ -60,7 +60,7 @@ class UsersList extends Component {
         <Sidebar />
         <PageHeader value={"لیست کاربران"} />
         <MainContent>
-          <div className="d-flex align-items-baseline mb-3">
+          <div className="d-flex align-items-baseline justify-content-center mb-3">
             <form className="d-flex align-items-center">
               <label className="iranSansFont ms-2">
                 جستجو در لیست کاربران:{""}

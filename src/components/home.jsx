@@ -25,14 +25,18 @@ class Home extends Component {
             </div>
             <div className="d-flex justify-content-between mt-4">
               <div>
-                <button className="btn btn-success iranSansFont">
-                  آرشیو فیش حقوقی
-                </button>
+                <Link to="/invoiceArchives">
+                  <button className="btn btn-success iranSansFont">
+                    آرشیو فیش حقوقی
+                  </button>
+                </Link>
               </div>
               <div>
-                <button className="btn btn-success iranSansFont">
-                  بارگذاری فیش حقوقی جدید
-                </button>
+                <Link to="/newInvoice">
+                  <button className="btn btn-success iranSansFont">
+                    بارگذاری فیش حقوقی جدید
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
@@ -59,9 +63,11 @@ class Home extends Component {
                 </Link>
               </div>
               <div>
-                <button className="btn btn-success iranSansFont">
-                  افزودن کاربر جدید
-                </button>
+                <Link to="/createUser">
+                  <button className="btn btn-success iranSansFont">
+                    افزودن کاربر جدید
+                  </button>
+                </Link>
               </div>
             </div>
           </div>
