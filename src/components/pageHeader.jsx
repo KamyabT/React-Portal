@@ -6,8 +6,7 @@ class PageHeader extends Component {
     return (
       <section className="d-flex align-items-center mt-3 p-4 rounded pageHeaderDesign">
         <div className="d-flex">
-          <h3 className="iranSansFont m-0">{this.props.value}</h3>
-          {/* <h4>{this.props.usersCount}</h4> */}
+          <h3 className="iranSansBoldFont m-0">{this.props.value}</h3>
         </div>
       </section>
     );

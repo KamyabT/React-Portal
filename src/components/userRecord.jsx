@@ -12,6 +12,18 @@ class UserRecord extends Component {
     return "غیرفعال";
   }
 
+  handleInvoice(userId) {
+    console.log("Invoice Clicked", userId);
+  }
+
+  handleEditUser(userId) {
+    console.log("Edit Clicked", userId);
+  }
+
+  handleDeleteUser(userId) {
+    console.log("Remove Clicked", userId);
+  }
+
   render() {
     return (
       <tr>
@@ -36,17 +48,29 @@ class UserRecord extends Component {
         </td>
         <td className="text-center">
           <Link to="/invoiceArchives">
-            <FaFileInvoiceDollar size="22px" color="#69b802" />
+            <FaFileInvoiceDollar
+              onClick={() => this.handleInvoice(this.props.nationalID)}
+              size="22px"
+              color="#69b802"
+            />
           </Link>
         </td>
         <td className="text-center">
           <Link to="/createUser">
-            <FaUserEdit size="22px" color="#cf8b04" />
+            <FaUserEdit
+              onClick={() => this.handleEditUser(this.props.nationalID)}
+              size="22px"
+              color="#cf8b04"
+            />
           </Link>
         </td>
         <td className="text-center">
           <Link to="/createUser">
-            <FaUserMinus size="22px" color="#cc2a02" />
+            <FaUserMinus
+              onClick={() => this.handleDeleteUser(this.props.nationalID)}
+              size="22px"
+              color="#cc2a02"
+            />
           </Link>
         </td>
       </tr>

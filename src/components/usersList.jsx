@@ -4,7 +4,11 @@ import PageHeader from "./pageHeader";
 import Sidebar from "./sidebar";
 import MainContent from "./mainContent";
 import UserRecord from "./userRecord";
+import Input from "@mui/material/Input";
+import InputLabel from "@mui/material/InputLabel";
+import InputAdornment from "@mui/material/InputAdornment";
 import { act } from "react-dom/test-utils";
+import { FaSearch } from "react-icons/fa";
 import { FaYenSign } from "react-icons/fa";
 
 class UsersList extends Component {
@@ -62,10 +66,13 @@ class UsersList extends Component {
         <MainContent>
           <div className="d-flex align-items-baseline justify-content-center mb-3">
             <form className="d-flex align-items-center">
-              <label className="iranSansFont ms-2">
-                جستجو در لیست کاربران:{""}
-              </label>
-              <input type={"text"} className="iranSansFont"></input>
+              <div>
+                <label className="iranSansFont ms-2 inputFieldDesign">
+                  جستجو در لیست کاربران:{""}
+                  <FaSearch className="iconDesign" />
+                </label>
+                <input type={"text"} className="iranSansFont"></input>
+              </div>
             </form>
             <p className="iranSansFont me-5">
               تعداد کاربران سیستم:{" "}
