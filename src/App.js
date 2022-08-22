@@ -8,6 +8,7 @@ import UsersList from './components/usersList';
 import NewInvoice from './components/newInvoice';
 import CreateUser from './components/createUser';
 import EditUsers from './components/editUsers';
+import LoginForm from './components/loginForm';
 
 
 
@@ -17,6 +18,7 @@ function App() {
     <div>
         <Routes>
           <Route exact path='/' element={<Home/>} />
+          <Route exact path='/login' element={<LoginForm/>}/>
           <Route exact path='/Smspanel' element={<Smspanel/>} />
           <Route exact path='/invoiceArchives' element={<InvoiceArchive/>} />
           <Route exact path='/usersList' element={<UsersList/>} />

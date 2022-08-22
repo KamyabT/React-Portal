@@ -14,10 +14,13 @@ const EditUsers = () => {
 
   useEffect(() => {
     axios.get("/data.json").then(function (response) {
-      setUserdata(response.data[id - 1]);
+      // console.log(response.data);
+      // console.log(response.data[id - 1]);
+      // setUserdata(response.data[id - 1]);
+      // console.log(userdata);
       return;
     });
-  });
+  }, []);
 
   return (
     <>

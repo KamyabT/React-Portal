@@ -7,28 +7,13 @@ class NewUserForm extends Component {
     requestedUser: this.props.requestedUser,
   };
 
-  // const { name } = this.props.requestedUser;
-
-  // setRecData = (props) => {
-  //   console.log(this.props);
-  //   if (this.props.requestedUser.id !== " ")
-  //     this.setState({ firstName: "hello jackie" });
-  //   console.log("ddddddddd");
-  // };
-
-  // componentDidMount() {
-  //   this.setRecData();
-  // }
-
   inputChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(this.state.requestedUser);
-    // console.log(this.state.firstName);
-    // console.log(this.props.requestedUser.id);
     // console.log(this.state.requestedUser);
   };
 
   render() {
+    // console.log(this.state.requestedUser);
     return (
       <>
         <div>
@@ -37,8 +22,8 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
                 <input
-                  value={this.state?.requestedUser.name ?? ""}
-                  // value={this.state.firstName}
+                  // value={this.state?.requestedUser.name ?? ""}
+                  value={this.state.firstName}
                   onChange={this.inputChange}
                   type={"text"}
                   className="iranSansFont p-1"
@@ -48,8 +33,8 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام خانوادگی: </label>
                 <input
-                  value={this.state?.requestedUser.name ?? ""}
-                  // value={this.state.lastName}
+                  // value={this.state?.requestedUser.name ?? ""}
+                  value={this.state.lastName}
                   type={"text"}
                   onChange={this.inputChange}
                   className="iranSansFont p-1"
@@ -59,7 +44,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">کد ملی: </label>
                 <input
-                  value={this.state?.requestedUser.NID}
+                  // value={this.state?.requestedUser.NID}
                   type={"number"}
                   className="iranSansFont p-1"
                 ></input>
@@ -67,7 +52,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره پرسنلی: </label>
                 <input
-                  value={this.state?.requestedUser.personel}
+                  // value={this.state?.requestedUser.personel}
                   type={"number"}
                   className="iranSansFont p-1"
                 ></input>
@@ -92,7 +77,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره تماس: </label>
                 <input
-                  value={this.state?.requestedUser.phone}
+                  // value={this.state?.requestedUser.phone}
                   type={"email"}
                   className="iranSansFont p-1"
                 ></input>
@@ -108,6 +93,9 @@ class NewUserForm extends Component {
                   type={"checkbox"}
                   role="switch"
                   id="flexSwitchCheckDefault"
+                  // checked={
+                  //   this.state.requestedUser.userstatus ? "true" : "false"
+                  // }
                 ></input>
               </div>
               <div className="form-group d-flex align-items-center ms-4">
