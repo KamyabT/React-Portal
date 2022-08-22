@@ -2,10 +2,12 @@ import React, { Component } from "react";
 
 class NewUserForm extends Component {
   state = {
-    firstName: "assss",
-    lastName: "fuckkk",
-    // test: this.props.requestedUser.name
+    firstName: "0",
+    lastName: "00",
+    requestedUser: this.props.requestedUser.name,
   };
+
+  // const { name } = this.props.requestedUser;
 
   // setRecData = (props) => {
   //   console.log(this.props);
@@ -20,11 +22,12 @@ class NewUserForm extends Component {
 
   inputChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    // console.log(this.props.firstName);
+    console.log(this.state.firstName);
+    // console.log(this.props.requestedUser.id);
+    // console.log(this.state.requestedUser);
   };
 
   render() {
-    // console.log(this.props.requestedUser.name);
     return (
       <>
         <div>
@@ -33,8 +36,8 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
                 <input
-                  value={this.props?.requestedUser.name ?? ""}
-                  // value={this.state.firstName}
+                  // value={this.props?.requestedUser.name ?? ""}
+                  value={this.state.firstName}
                   onChange={this.inputChange}
                   type={"text"}
                   className="iranSansFont p-1"
@@ -60,7 +63,7 @@ class NewUserForm extends Component {
                 <input type={"number"} className="iranSansFont p-1"></input>
               </div>
               <div className="form-group d-flex align-items-center ms-2">
-                <label className="iranSansFont" for="">
+                <label className="iranSansFont" htmlFor="">
                   نقش کاربری:{" "}
                 </label>
                 <select

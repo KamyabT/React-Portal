@@ -18,8 +18,9 @@ const EditUsers = () => {
     axios
       .get("https://jsonplaceholder.typicode.com/users")
       .then(function (response) {
-        console.log(response);
+        // console.log(response);
         setUserdata(response.data);
+        // console.log(userdata);
         return;
       });
   });
