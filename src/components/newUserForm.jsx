@@ -4,7 +4,7 @@ class NewUserForm extends Component {
   state = {
     firstName: "0",
     lastName: "00",
-    requestedUser: this.props.requestedUser.name,
+    requestedUser: this.props.requestedUser,
   };
 
   // const { name } = this.props.requestedUser;
@@ -22,7 +22,8 @@ class NewUserForm extends Component {
 
   inputChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
-    console.log(this.state.firstName);
+    console.log(this.state.requestedUser);
+    // console.log(this.state.firstName);
     // console.log(this.props.requestedUser.id);
     // console.log(this.state.requestedUser);
   };
@@ -36,8 +37,8 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
                 <input
-                  // value={this.props?.requestedUser.name ?? ""}
-                  value={this.state.firstName}
+                  value={this.state?.requestedUser.name ?? ""}
+                  // value={this.state.firstName}
                   onChange={this.inputChange}
                   type={"text"}
                   className="iranSansFont p-1"
@@ -47,7 +48,8 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام خانوادگی: </label>
                 <input
-                  value={this.state.lastName}
+                  value={this.state?.requestedUser.name ?? ""}
+                  // value={this.state.lastName}
                   type={"text"}
                   onChange={this.inputChange}
                   className="iranSansFont p-1"
@@ -56,11 +58,19 @@ class NewUserForm extends Component {
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">کد ملی: </label>
-                <input type={"number"} className="iranSansFont p-1"></input>
+                <input
+                  value={this.state?.requestedUser.NID}
+                  type={"number"}
+                  className="iranSansFont p-1"
+                ></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره پرسنلی: </label>
-                <input type={"number"} className="iranSansFont p-1"></input>
+                <input
+                  value={this.state?.requestedUser.personel}
+                  type={"number"}
+                  className="iranSansFont p-1"
+                ></input>
               </div>
               <div className="form-group d-flex align-items-center ms-2">
                 <label className="iranSansFont" htmlFor="">
@@ -81,7 +91,11 @@ class NewUserForm extends Component {
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره تماس: </label>
-                <input type={"email"} className="iranSansFont p-1"></input>
+                <input
+                  value={this.state?.requestedUser.phone}
+                  type={"email"}
+                  className="iranSansFont p-1"
+                ></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">رمز عبور</label>

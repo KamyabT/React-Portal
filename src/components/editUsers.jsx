@@ -7,22 +7,16 @@ import Sidebar from "./sidebar";
 import axios from "axios";
 import React, { useState, useEffect } from "react";
 
-// const usersData = require("../testdata/testdata.json");
-
 const EditUsers = () => {
   const { id } = useParams();
 
   const [userdata, setUserdata] = useState([]);
 
   useEffect(() => {
-    axios
-      .get("https://jsonplaceholder.typicode.com/users")
-      .then(function (response) {
-        // console.log(response);
-        setUserdata(response.data);
-        // console.log(userdata);
-        return;
-      });
+    axios.get("/data.json").then(function (response) {
+      setUserdata(response.data[id - 1]);
+      return;
+    });
   });
 
   return (
@@ -31,13 +25,8 @@ const EditUsers = () => {
       <Sidebar />
       <PageHeader title={"ویرایش کاربر"} />
       <MainContent>
-        {/* {console.log(userdata)} */}
-        <h1>
-          ------------------------------------------ {id} ---------------------{" "}
-          {id}
-        </h1>
         <NewUserForm
-          requestedUser={userdata[id]}
+          requestedUser={userdata}
           design={"d-flex flex-wrap newUserDesignPage"}
         />
       </MainContent>
