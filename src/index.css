@@ -249,6 +249,12 @@ textarea:focus {
 } */
 
 
+.iconDesign {
+  position: relative;
+  left: 0;
+  right: 190px;
+}
+
 /* .iconDesign {
   padding: 10px;
   min-width: 40px;

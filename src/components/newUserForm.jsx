@@ -1,8 +1,30 @@
 import React, { Component } from "react";
 
 class NewUserForm extends Component {
-  state = {};
+  state = {
+    firstName: "assss",
+    lastName: "fuckkk",
+    // test: this.props.requestedUser.name
+  };
+
+  // setRecData = (props) => {
+  //   console.log(this.props);
+  //   if (this.props.requestedUser.id !== " ")
+  //     this.setState({ firstName: "hello jackie" });
+  //   console.log("ddddddddd");
+  // };
+
+  // componentDidMount() {
+  //   this.setRecData();
+  // }
+
+  inputChange = (e) => {
+    this.setState({ [e.target.name]: e.target.value });
+    // console.log(this.props.firstName);
+  };
+
   render() {
+    // console.log(this.props.requestedUser.name);
     return (
       <>
         <div>
@@ -10,11 +32,24 @@ class NewUserForm extends Component {
             <div className={this.props.design}>
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
-                <input type={"text"} className="iranSansFont p-1"></input>
+                <input
+                  value={this.props?.requestedUser.name ?? ""}
+                  // value={this.state.firstName}
+                  onChange={this.inputChange}
+                  type={"text"}
+                  className="iranSansFont p-1"
+                  name="firstName"
+                ></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام خانوادگی: </label>
-                <input type={"text"} className="iranSansFont p-1"></input>
+                <input
+                  value={this.state.lastName}
+                  type={"text"}
+                  onChange={this.inputChange}
+                  className="iranSansFont p-1"
+                  name="lastName"
+                ></input>
               </div>
               <div className="form-group ms-2">
                 <label className="iranSansFont">کد ملی: </label>

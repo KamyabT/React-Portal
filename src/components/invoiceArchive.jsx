@@ -12,7 +12,7 @@ class InvoiceArchive extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"آرشیو فیش حقوقی"} />
+        <PageHeader title={"آرشیو فیش حقوقی"} />
         <section className="mainContentDesign justify-content-center">
           <form className="d-flex align-items-center formButtonDesign">
             <div className="form-group ms-1">

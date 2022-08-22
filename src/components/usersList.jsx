@@ -43,7 +43,7 @@ class UsersList extends Component {
         name: "mamad2",
         personel: 800006,
         userstatus: false,
-        NID: 30545155,
+        NID: 20535122,
         phone: 9124556789,
         send: true,
         invoice: 3,
@@ -62,7 +62,7 @@ class UsersList extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"لیست کاربران"} />
+        <PageHeader title={"لیست کاربران"} />
         <MainContent>
           <div className="d-flex align-items-baseline justify-content-center mb-3">
             <form className="d-flex align-items-center">

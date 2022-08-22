@@ -13,7 +13,7 @@ class NewInvoice extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"بارگذاری فیش حقوقی"} />
+        <PageHeader title={"بارگذاری فیش حقوقی"} />
         <MainContent>
           <UploadForm />
         </MainContent>

@@ -22,7 +22,7 @@ class InvoiceForm extends Component {
             </select>
           </div>
           <div>
-            <label className="ms-1 me-3 iranSansFont" for="">
+            <label className="ms-1 me-3 iranSansFont">
               ماه :
             </label>
             <select className="rounded me-2 InputsDesign" id="" name="" form="">
@@ -42,13 +42,13 @@ class InvoiceForm extends Component {
           </div>
         </div>
         <div>
-          <label className="ms-1 me-3 iranSansFont " for="">
+          <label className="ms-1 me-3 iranSansFont ">
             فایل (فایل را با فرمت zip فشرده کنید) :
           </label>
           <input type={"file"} className="rounded chooseFileDesign"></input>
         </div>
         <div className="d-flex align-items-center">
-          <label className="align-items-center me-3 ms-3 iranSansFont" for="">
+          <label className="align-items-center me-3 ms-3 iranSansFont">
             ارسال پیامک به کاربران :
           </label>
           <input className="align-items-center" type={"checkbox"}></input>

@@ -14,7 +14,7 @@ class Home extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"داشبورد"} />
+        <PageHeader title={"داشبورد"} />
         <section className="d-flex">
           <div className="halfMainContentDesign d-flex flex-column">
             <p className="iranSansBoldFont mb-0">وضعیت فیش های حقوقی</p>

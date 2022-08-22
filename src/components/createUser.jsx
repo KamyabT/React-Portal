@@ -7,12 +7,13 @@ import Sidebar from "./sidebar";
 
 class CreateUser extends Component {
   state = {};
+
   render() {
     return (
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"افزودن کاربر جدید"} />
+        <PageHeader title={"افزودن کاربر جدید"} />
         <MainContent>
           <NewUserForm design={"d-flex flex-wrap newUserDesignPage"} />
         </MainContent>

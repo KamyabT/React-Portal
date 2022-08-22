@@ -13,7 +13,7 @@ class Smspanel extends Component {
       <>
         <Navbar />
         <Sidebar />
-        <PageHeader value={"پنل پیامکی"} />
+        <PageHeader title={"پنل پیامکی"} />
         <section className="mainContentDesign">
           <SmsPanelForm />
         </section>
