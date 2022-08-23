@@ -9,17 +9,28 @@ class LoginForm extends Component {
         <div className="formBg">
           <div className="d-flex vh-100 justify-content-center align-items-center">
             <form action="#">
-              <div>
+              <div className="d-flex flex-column">
+                <label>username : </label>
                 <input type={"email"} value={"user"} />
               </div>
               <div>
+                <label>pass</label>
                 <input type={"password"} value={"pass"} />
               </div>
               <div>
-                <input type={"password"} value={"passsssss"} />
+                <label>pass</label>
+                <input
+                  className="iranSansFont"
+                  type={"number"}
+                  value={"passsssss"}
+                  placeholder={"کد امنیتی ... "}
+                />
               </div>
               <div>
-                <input type={"submit"} />
+                <button
+                  className="form-control btn btn-primary submit px-3"
+                  type={"submit"}
+                />
               </div>
             </form>
           </div>
