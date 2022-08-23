@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Image from "../images/loginBg.jpg";
+import Logo from "../images/CompanyLogo.png";
 
 class LoginForm extends Component {
   state = {};
@@ -7,20 +7,27 @@ class LoginForm extends Component {
     return (
       <section className="mainSectionDesign">
         <div className="formBg">
-          <div className="d-flex vh-100 justify-content-center align-items-center">
+          <div className="d-flex flex-column vh-100 justify-content-center align-items-center">
+            <div className="mb-4 mt-2">
+              <img src={Logo} className="logoDesign" alt="" />
+            </div>
             <form action="#">
               <div className="d-flex flex-column">
-                <label>username : </label>
-                <input type={"email"} value={"user"} />
-              </div>
-              <div>
-                <label>pass</label>
-                <input type={"password"} value={"pass"} />
-              </div>
-              <div>
-                <label>pass</label>
+                <label className="iranSansFont text-white mb-2">
+                  نام کاربری{" "}
+                </label>
                 <input
-                  className="iranSansFont"
+                  className="px-2 py-2 iranSansFont"
+                  type={"email"}
+                  placeholder={"کد ملی / شماره تماس"}
+                />
+              </div>
+              <div>
+                <input type={"password"} />
+              </div>
+              <div className="d-flex justify-content-center">
+                <input
+                  className="iranSansFont p-1 mt-2"
                   type={"number"}
                   value={"passsssss"}
                   placeholder={"کد امنیتی ... "}
@@ -28,9 +35,12 @@ class LoginForm extends Component {
               </div>
               <div>
                 <button
-                  className="form-control btn btn-primary submit px-3"
+                  className="form-control btn btn-primary submit px-3 mt-4 iranSansFont"
                   type={"submit"}
-                />
+                  value={""}
+                >
+                  ورود{" "}
+                </button>
               </div>
             </form>
           </div>
