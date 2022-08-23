@@ -6,8 +6,24 @@ class LoginForm extends Component {
   render() {
     return (
       <section className="mainSectionDesign">
-        <div>
-          <div>555555555555555</div>
+        <div className="formBg">
+          <div className="d-flex vh-100 justify-content-center align-items-center">
+            <form action="#">
+              <div>
+                <input type={"email"} value={"user"} />
+              </div>
+              <div>
+                <input type={"password"} value={"pass"} />
+              </div>
+              <div>
+                <input type={"password"} value={"passsssss"} />
+              </div>
+              <div>
+                <input type={"submit"} />
+              </div>
+            </form>
+          </div>
+          <div>{/* <h5>555555</h5> */}</div>
         </div>
       </section>
     );
