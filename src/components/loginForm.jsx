@@ -27,9 +27,8 @@ class LoginForm extends Component {
               </div>
               <div className="d-flex justify-content-center">
                 <input
-                  className="iranSansFont p-1 mt-2"
+                  className="iranSansFont px-2 py-2 mt-2"
                   type={"number"}
-                  value={"passsssss"}
                   placeholder={"کد امنیتی ... "}
                 />
               </div>
