@@ -266,25 +266,7 @@ textarea:focus {
 
 /******************** Login Form *****************/
 
-.logoDesign {
-  width: 150px;
-  height: 75px;
-}
-
-
-.formBg {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 325px;
-  height: 400px;
-  background: #8ec5c980;
-  backdrop-filter: blur(5px);
-  border-radius: 5%;
-}
-
-
-.mainSectionDesign {
+.mainLoginSectionDesign {
   height: 100vh;
   width: 100vw;
   display: flex;
@@ -293,3 +275,29 @@ textarea:focus {
   /* background-color: #e3e1c8; */
   background-image: url("../src/images/loginBg.jpg");
 }
+
+
+
+
+.logoDesign {
+  width: 150px;
+  height: 65px;
+}
+
+.mainLoginSectionDesign input {
+  width: 200px !important;
+}
+
+
+.formBg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 350px;
+  height: 400px;
+  background: #8ec5c980;
+  backdrop-filter: blur(5px);
+  border-radius: 5%;
+}
+
+

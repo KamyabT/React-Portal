@@ -5,7 +5,7 @@ class LoginForm extends Component {
   state = {};
   render() {
     return (
-      <section className="mainSectionDesign">
+      <section className="mainLoginSectionDesign">
         <div className="formBg">
           <div className="d-flex flex-column vh-100 justify-content-center align-items-center">
             <div className="mb-4 mt-2">
