@@ -10,18 +10,14 @@ import React, { useState, useEffect } from "react";
 const EditUsers = () => {
   const { id } = useParams();
 
-  const [userdata, setUserdata] = useState([]);
+  const [userdata, setUserdata] = useState({});
 
   useEffect(() => {
     axios.get("/data.json").then(function (response) {
-      // console.log(response.data);
-      // console.log(response.data[id - 1]);
-      // setUserdata(response.data[id - 1]);
-      // console.log(userdata);
+      setUserdata(response.data[id - 1]);
       return;
     });
   }, []);
-
   return (
     <>
       <Navbar />
