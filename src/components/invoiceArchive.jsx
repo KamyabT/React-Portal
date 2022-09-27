@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import Navbar from "./navbar";
 import Sidebar from "./sidebar";
 import PageHeader from "./pageHeader";
+import InvoiceTable from "./invoiceTable";
 
 class InvoiceArchive extends Component {
   state = {
@@ -85,6 +86,7 @@ class InvoiceArchive extends Component {
             </button>
           </form>
         </section>
+        <InvoiceTable />
       </>
     );
   }

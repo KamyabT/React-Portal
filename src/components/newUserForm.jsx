@@ -86,7 +86,7 @@ class NewUserForm extends Component {
                 <label className="iranSansFont">شماره تماس: </label>
                 <input
                   value={this.state?.requestedUser.phone ?? ""}
-                  type={"email"}
+                  type={"number"}
                   className="iranSansFont p-1"
                 ></input>
               </div>

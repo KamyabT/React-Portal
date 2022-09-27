@@ -67,6 +67,63 @@ input {
   background: none;
 }
 
+
+
+/********************Global*****************/
+
+
+.wdth200 {
+  width: 150px;
+}
+
+
+.wdth15 {
+  width: 15%;
+}
+
+.wdth20 {
+  width: 20%;
+}
+
+.wdth25 {
+  width: 25%;
+}
+
+.wdth30 {
+  width: 30%;
+}
+
+.wdth35 {
+  width: 35%;
+}
+
+.wdth40 {
+  width: 40%;
+}
+
+
+.greenDesignBg {
+  background: rgb(0, 114, 0);
+}
+
+.yellowDesignBg {
+  background: #ecd503;
+}
+
+.redDesignBg {
+  background: #eb3f20;
+}
+
+/* .tblRowColorGr {
+  background: #e0e0e0;
+}
+
+.tblRowColorWt {
+  background: #ffffff;
+} */
+
+
+
 /********************Navbar*****************/
 
 .navbarDesign {
@@ -87,8 +144,10 @@ input {
 
 
 .sidebarDesign {
-  height: calc(100vh - 66px);
-  position: fixed;
+  /* height: calc(100vh - 66px);
+  position: fixed; */
+  height: 100vh;
+  position: absolute;
   background-color: #518f8b;
 }
 
@@ -204,6 +263,40 @@ textarea:focus {
   border: 1px solid;
   padding: 2.5px;
 }
+
+
+
+
+/******************** Table Border Design*****************/
+
+.tblBrdrMainDesign {
+  border: 1px solid #525865;
+  margin: 5px 0;
+}
+
+.tblBrdrLftDesign {
+  border-left: 1px solid #525865;
+
+}
+
+
+.tblBrdrRightDesign {
+  border-right: 1px solid #525865;
+
+}
+
+
+.tblBrdrBotDesign {
+  border-bottom: 1px solid #525865;
+
+}
+
+
+.tblBrdrTopDesign {
+  border-top: 1px solid #525865;
+
+}
+
 
 
 /******************** Upload Archives *****************/
