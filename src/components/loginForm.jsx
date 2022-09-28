@@ -1,8 +1,31 @@
 import React, { Component } from "react";
+import axios from "axios";
 import Logo from "../images/CompanyLogo.png";
 
 class LoginForm extends Component {
-  state = {};
+  state = {
+    message: " ",
+  };
+
+  handleChange = (event) => {
+    let mess = event.target.value;
+    this.setState({ message: mess });
+  };
+
+  doSumbit = async () => {
+    const obj = { phone: this.state.message };
+    // const { data: user } = axios.post(
+    //   "http://67.43.234.92:30000/api/auth",
+    //   obj
+    // );
+    console.log(obj);
+    const promise = await axios.post("http://67.43.234.92:30000/api/auth", obj);
+    const recData = promise.data;
+    console.log(promise);
+    const uniqueId = recData.id
+    console.log(uniqueId);
+  };
+
   render() {
     return (
       <section className="mainLoginSectionDesign">
@@ -18,22 +41,25 @@ class LoginForm extends Component {
                 </label>
                 <input
                   className="px-2 py-2 iranSansFont"
-                  type={"email"}
+                  type={"string"}
+                  name={"phone"}
+                  onChange={this.handleChange}
                   placeholder={"کد ملی / شماره تماس"}
                 />
               </div>
-              <div>
+              {/* <div>
                 <input type={"password"} />
-              </div>
-              <div className="d-flex justify-content-center">
+              </div> */}
+              {/* <div className="d-flex justify-content-center">
                 <input
                   className="iranSansFont px-2 py-2 mt-2"
                   type={"number"}
                   placeholder={"کد امنیتی ... "}
                 />
-              </div>
+              </div> */}
               <div>
                 <button
+                  onClick={this.doSumbit}
                   className="form-control btn btn-primary submit px-3 mt-4 iranSansFont"
                   type={"submit"}
                   value={""}
