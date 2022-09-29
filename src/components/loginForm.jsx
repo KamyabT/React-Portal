@@ -5,6 +5,7 @@ import Logo from "../images/CompanyLogo.png";
 class LoginForm extends Component {
   state = {
     message: " ",
+    formStep: true
   };
 
   handleChange = (event) => {
@@ -18,17 +19,35 @@ class LoginForm extends Component {
     //   "http://67.43.234.92:30000/api/auth",
     //   obj
     // );
-    console.log(obj);
-    const promise = await axios.post("http://67.43.234.92:30000/api/auth", obj);
-    const recData = promise.data;
-    console.log(promise);
-    const uniqueId = recData.id
-    console.log(uniqueId);
+    // console.log(obj);
+    // const promise = await axios.post("http://67.43.234.92:30000/api/auth", obj);
+    // const recData = promise.data;
+    // console.log(promise);
+    // const uniqueId = recData.id;
+    // console.log(uniqueId);
+
+    // console.log(obj);
+    const promise = await axios
+      .post("http://67.43.234.92:30000/api/auth", obj)
+      .then(function (response) {
+        console.log(response);
+        console.log(11233333);
+        window.location.replace("/kamyabtst");
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+    // const recData = promise.data;
+    // console.log(promise);
+    // const uniqueId = recData.id;
+    // console.log(uniqueId);
   };
 
   render() {
     return (
       <section className="mainLoginSectionDesign">
+        {!this.state.formStep && <h1>first form</h1>}
+        {this.state.formStep && <h1>second form</h1>}
         <div className="formBg">
           <div className="d-flex flex-column vh-100 justify-content-center align-items-center">
             <div className="mb-4 mt-2">

@@ -9,6 +9,7 @@ import NewInvoice from './components/newInvoice';
 import CreateUser from './components/createUser';
 import EditUsers from './components/editUsers';
 import LoginForm from './components/loginForm';
+import Kamyab from './components/kamyabtst';
 
 
 
@@ -24,6 +25,7 @@ function App() {
           <Route exact path='/usersList' element={<UsersList/>} />
           <Route exact path='/newInvoice' element={<NewInvoice/>} />
           <Route exact path='/createUser' element={<CreateUser/>} />
+          <Route exact path='/kamyabtst' element={<Kamyab/>} />
           {/* <Route path='/editUsers' element={<EditUsers/>}/> */}
           <Route path="/user/:id" element={<EditUsers />} />
         </Routes>

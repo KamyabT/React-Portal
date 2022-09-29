@@ -32,7 +32,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام: </label>
                 <input
-                  value={this.state?.requestedUser?.name}
+                  value={this.state.requestedUser?.name ?? ""}
                   onChange={this.inputChange}
                   type={"text"}
                   className="iranSansFont p-1"
@@ -42,7 +42,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">نام خانوادگی: </label>
                 <input
-                  value={this.state?.requestedUser.lastName ?? ""}
+                  value={this.state.requestedUser?.name ?? ""}
                   type={"text"}
                   onChange={this.inputChange}
                   className="iranSansFont p-1"
@@ -52,7 +52,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">کد ملی: </label>
                 <input
-                  value={this.state?.requestedUser.NID ?? ""}
+                  value={this.state.requestedUser?.NID ?? ""}
                   type={"number"}
                   className="iranSansFont p-1"
                 ></input>
@@ -60,7 +60,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره پرسنلی: </label>
                 <input
-                  value={this.state?.requestedUser.personel ?? ""}
+                  value={this.state.requestedUser?.personel ?? ""}
                   type={"number"}
                   className="iranSansFont p-1"
                 ></input>
@@ -85,7 +85,7 @@ class NewUserForm extends Component {
               <div className="form-group ms-2">
                 <label className="iranSansFont">شماره تماس: </label>
                 <input
-                  value={this.state?.requestedUser.phone ?? ""}
+                  value={this.state.requestedUser?.phone ?? ""}
                   type={"number"}
                   className="iranSansFont p-1"
                 ></input>
